@@ -1,1 +1,3 @@
 # GetTaller
+
+Projede observer pattern kullandım. Çoğu class'a ne işe yaradıklarına dair açıklamaları summary olarak girdim. Projenin referans değerleri 9:16 şeklindedir ve portrait moda uygun şekilde tasarlanmıştır, geniş ekranlarda istenen etkiyi veremeyebilir. Oyun içindeki tüm canvaslar prefab olarak bulunan EventSystem içerisindedir. Aynı zamanda SceneManagement ve PoolController da hiyerarşinin daha toparlanmış bir şekilde durması adına söz konusu prefabın içerisinde yerleştirilmiştir. 

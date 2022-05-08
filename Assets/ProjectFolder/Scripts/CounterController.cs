@@ -64,7 +64,7 @@ public class CounterController : MonoBehaviour
     private void UpdateScoreUI(int scoreGained)
     {
         
-        if((scoreFromPrefs+score.GetValue()) - scoreGained > 0 || scoreGained > 0)
+        if((scoreFromPrefs+score.GetValue()) + scoreGained > 0 || scoreGained > 0)
         {
             scoreTextInMain.text = (scoreFromPrefs+score.Increase(scoreGained)).ToString();
             scoreTextInHUD.text = (scoreFromPrefs+score.GetValue()).ToString();
@@ -76,7 +76,6 @@ public class CounterController : MonoBehaviour
         }
         else
         {
-            Debug.Log((scoreFromPrefs+score.GetValue()));
             PlayerPrefs.SetInt("Score", 0);
             score.SetValue(0);
 
